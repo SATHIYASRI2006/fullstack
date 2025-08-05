@@ -13,15 +13,15 @@ This is a simple PHP web app that verifies the entered 12th grade marks, SGPA, a
 🖼️ Demo
 
 Initial screen
-<img width="100" alt="Screenshot 2025-08-05 084939" src="https://github.com/user-attachments/assets/51b4e639-56a8-4e3c-b103-6013bb61853f" />
+<img width="1920" height="922" alt="Screenshot 2025-08-05 084939" src="https://github.com/user-attachments/assets/51b4e639-56a8-4e3c-b103-6013bb61853f" />
 
 
 
 All values matched ✅
-<img width="100" alt="Screenshot 2025-08-05 085035" src="https://github.com/user-attachments/assets/39835031-7dcb-45b7-becc-d764d463472a" />
+<img width="1895" height="923" alt="Screenshot 2025-08-05 085035" src="https://github.com/user-attachments/assets/39835031-7dcb-45b7-becc-d764d463472a" />
 
 Mismatch in values ❌
-<img width="100" alt="Screenshot 2025-08-05 085000" src="https://github.com/user-attachments/assets/53af85e8-35d4-4d1c-8015-0186a288bb2b" />
+<img width="1893" height="928" alt="Screenshot 2025-08-05 085000" src="https://github.com/user-attachments/assets/53af85e8-35d4-4d1c-8015-0186a288bb2b" />
 
 
 
