@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marksheet Verifier</title>
+</head>
+<body style="font-family: Arial; text-align: center; padding: 40px;">
+    <h2>Verify 12th Mark, SGPA and CGPA</h2>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <label>Total Mark (12th):</label><br>
+        <input type="number" name="total_mark" required><br><br>
+
+        <label>SGPA:</label><br>
+        <input type="text" name="sgpa" required><br><br>
+
+        <label>CGPA:</label><br>
+        <input type="text" name="cgpa" required><br><br>
+
+        <label>Upload 12th Marksheet:</label><br>
+        <input type="file" name="marksheet_12th" accept="image/*" required><br><br>
+
+        <label>Upload CGPA/SGPA Marksheet:</label><br>
+        <input type="file" name="marksheet_cgpa" accept="image/*" required><br><br>
+
+        <input type="submit" value="Verify">
+    </form>
+
+    {% if result %}
+        <h3 style="color: {{ color }}">{{ result }}</h3>
+        <p><strong>Entered Total Mark:</strong> {{ entered_total }}</p>
+        <p><strong>OCR Total Mark:</strong> {{ calculated_total }}</p>
+        <p><strong>Extracted Numbers (from 12th marksheet):</strong> {{ extracted_numbers }}</p>
+        <hr>
+        <p><strong>Entered SGPA:</strong> {{ entered_sgpa }}</p>
+        <p><strong>Extracted SGPA:</strong> {{ extracted_sgpa }}</p>
+        <hr>
+        <p><strong>Entered CGPA:</strong> {{ entered_cgpa }}</p>
+        <p><strong>Extracted CGPA:</strong> {{ extracted_cgpa }}</p>
+    {% endif %}
+</body>
+</html>
